@@ -1,0 +1,25 @@
+# data and artifacts
+data/
+datasets/
+checkpoints/
+outputs/
+results/
+logs/
+tmp/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+
+# model weights
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+
+# editors
+.vscode/
+.idea/
