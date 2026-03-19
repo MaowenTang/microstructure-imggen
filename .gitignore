@@ -6,6 +6,10 @@ outputs/
 results/
 logs/
 tmp/
+500um_Ripples/
+patches_512_from8/
+patches_512_from8_sobel70/
+diffusion_runs/
 
 # python
 __pycache__/
@@ -19,7 +23,12 @@ __pycache__/
 *.onnx
 *.npy
 *.npz
+*.bin
+*.safetensors
 
 # editors
 .vscode/
 .idea/
+
+# accidental CLI arg placeholder files
+scripts/--*
