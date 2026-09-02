@@ -6,6 +6,11 @@ outputs/
 results/
 logs/
 tmp/
+runs/
+reports/
+apptainer_cache/
+gh01_venv/
+gh01_venv_torch212_cu130/
 
 # python
 __pycache__/

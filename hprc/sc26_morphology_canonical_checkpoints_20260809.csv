@@ -1,0 +1,8 @@
+condition,wave_id,job_name,checkpoint_id,checkpoint_path
+single,canonical_single,single_rep1,single_rep1,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_single/gh01_e12_p9_sobel50_w2_rep1/e7_last.pt
+single,canonical_single,single_rep2,single_rep2,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_single/gh01_e12_p9_sobel50_w2_rep2/e7_last.pt
+concurrent2,canonical_c2,c2_a,c2_a,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_recovery1_c2_r1/gh01_e12_p9_conc2_a/e7_last.pt
+concurrent2,canonical_c2,c2_b,c2_b,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_recovery1_c2_r1/gh01_e12_p9_conc2_b/e7_last.pt
+concurrent3,canonical_c3,c3_a,c3_a,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_recovery1_c3_r1/gh01_e12_p9_conc3_a/e7_last.pt
+concurrent3,canonical_c3,c3_b,c3_b,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_recovery1_c3_r1/gh01_e12_p9_conc3_b/e7_last.pt
+concurrent3,canonical_c3,c3_c,c3_c,/scratch/user/u.mt227311/microstructure-imggen/runs/sc26_gh200_scaling_repeats_20260809_recovery1_c3_r1/gh01_e12_p9_conc3_c/e7_last.pt
