@@ -28,3 +28,17 @@ __pycache__/
 # editors
 .vscode/
 .idea/
+.DS_Store
+.omx/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+data/
+*.ckpt
+*.pt
+*.h5
+*.npz
+results/**/*.bin
+loop/GITLOG.txt
+loop/DIFF_*.patch
