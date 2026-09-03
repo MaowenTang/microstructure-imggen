@@ -1,0 +1,26 @@
+LOGIN_HOSTNAME=alogin2.cluster
+
+SLURM_VERSION
+slurm 25.11.7
+
+PARTITIONS
+PARTITION AVAIL  TIMELIMIT   NODES(A/I/O/T) NODELIST
+cpu*         up 3-00:00:00        83/1/4/88 ac[001-011,014-022,026-027,029-031,033-040,042-044,046-048,050-054,056-063,066-067,069-070,072-073,075-077,080,082-095,097,099-102,104-110]
+gpu          up 2-00:00:00          7/0/0/7 ac[041,045,049,055,064-065,096]
+gpu_debug    up    2:00:00          3/0/0/3 ac[064-065,098]
+pvc          up 2-00:00:00        21/9/0/30 ac[010-013,023-025,028,032,034,039,062,068,078-079,081-083,085-087,089,094-095,097,099-103]
+bittware     up 2-00:00:00          0/0/2/2 ac[071,074]
+nec          up 2-00:00:00          0/0/1/1 dss
+
+GPU_GRES
+GRES NODES
+gpu:h100:8(S:0) 2
+gpu:h100:4(S:0) 3
+gpu:a30:2(S:0) 2
+
+SCRATCH_QUOTA
+Your current disk quotas are:
+Disk                            Disk Usage      Limit    File Usage      Limit
+/home/u.mt227311                      1.9G      10.0G          8434      10000
+/scratch/user/u.mt227311            160.9G       1.0T        171127     250000
+/scratch/group/p.cis240346.000      397.2G       5.0T        369985     500000
