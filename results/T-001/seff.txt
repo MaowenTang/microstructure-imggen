@@ -1,0 +1,10 @@
+Job ID: 2089175
+Cluster: aces
+User/Group: u.mt227311/u.mt227311
+State: COMPLETED (exit code 0)
+Cores: 1
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 00:01:00 core-walltime
+Job Wall-clock time: 00:01:00
+Memory Utilized: 1.83 MB
+Memory Efficiency: 0.18% of 1.00 GB (1.00 GB/core)

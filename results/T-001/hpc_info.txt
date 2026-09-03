@@ -22,5 +22,5 @@ SCRATCH_QUOTA
 Your current disk quotas are:
 Disk                            Disk Usage      Limit    File Usage      Limit
 /home/u.mt227311                      1.9G      10.0G          8434      10000
-/scratch/user/u.mt227311            160.9G       1.0T        171127     250000
+/scratch/user/u.mt227311            160.9G       1.0T        171310     250000
 /scratch/group/p.cis240346.000      397.2G       5.0T        369985     500000

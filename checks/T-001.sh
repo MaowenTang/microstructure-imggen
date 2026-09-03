@@ -19,6 +19,10 @@ pass "all required deliverables exist"
 test -s results/T-001/hpc_info.txt || fail "hpc_info.txt is empty"
 grep -Eq '^NODE=' results/T-001/job_output.log || fail "compute NODE marker absent"
 grep -Eq '^JOB_ID=[0-9]+' results/T-001/job_output.log || fail "JOB_ID marker absent"
+compute_node=$(sed -n 's/^NODE=//p' results/T-001/job_output.log | head -n1)
+login_node=$(sed -n 's/^LOGIN_HOSTNAME=//p' results/T-001/hpc_info.txt | head -n1)
+test -n "$compute_node" || fail "could not parse compute node"
+test "$compute_node" != "$login_node" || fail "job ran on login node $login_node"
 
 job_id=$(sed -n 's/^JOB_ID=//p' results/T-001/job_output.log | head -n1)
 test -n "$job_id" || fail "could not parse job ID"
@@ -26,7 +30,7 @@ grep -Eq "(^|[|[:space:]])${job_id}([.|[:space:]|]|$)" results/T-001/sacct.txt |
 grep -Eq "Job ID:[[:space:]]*${job_id}" results/T-001/seff.txt || fail "job ID absent from seff"
 grep -q '^#SBATCH --time=00:05:00$' scripts/t001_minimal.sbatch || fail "sbatch timelimit is not 00:05:00"
 grep -Eq "(^|[|])00:05:00([|]|$)" results/T-001/sacct.txt || fail "sacct does not show 00:05:00"
-pass "job markers, matching ID $job_id, and timelimit verified"
+pass "compute node $compute_node differs from login node $login_node; matching ID $job_id and timelimit verified"
 
 for n in $(seq 1 8); do
   grep -Eq "^## ${n}\." results/T-001/repo_map.md || fail "repo map entry $n absent"
